@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests">
+    <listeners>
+        <listener class-name="listeners.ScreenshotListener"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <suite-files preserve-order="true">
+        <suite-file path="test-suites/ui_test.xml"/>
+    </suite-files>
+</suite>

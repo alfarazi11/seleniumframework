@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AskDoctor]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="listeners.ScreenshotListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="UI Test(failed)" verbose="0">
+    <classes>
+      <class name="test.LoginTest">
+        <methods>
+          <include name="validLogin"/>
+          <include name="failedLogin"/>
+          <include name="createChromeDriver"/>
+          <include name="quitChromeDriver"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+    </classes>
+  </test> <!-- UI Test(failed) -->
+</suite> <!-- Failed suite [AskDoctor] -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SeleniumFramework"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="8.259">
+    <properties></properties>
+
+
+
+            <testcase
+                name="globalSearch"
+                time="8.259"
+                classname="test.HomeTest">
+            </testcase>
+</testsuite>

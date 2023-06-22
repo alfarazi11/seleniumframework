@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 57.816 s <<< FAILURE! - in TestSuite
+validLogin(test.LoginTest)  Time elapsed: 0.264 s  <<< FAILURE!
+java.lang.NullPointerException
+	at test.LoginTest.validLogin(LoginTest.java:16)
+
+globalSearch(test.HomeTest)  Time elapsed: 8.998 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //span[@class='sLuUJAAS'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-NVQOVER', ip: '10.125.75.113', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\medik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62623}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62623/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ebbcf5546e2f4bc6d014c35cd01ef013
+	at test.HomeTest.globalSearch(HomeTest.java:22)
+
+temuDokterBuatJanji(test.TemuDokterTest)  Time elapsed: 2.014 s  <<< FAILURE!
+java.lang.NullPointerException
+	at test.TemuDokterTest.temuDokterBuatJanji(TemuDokterTest.java:50)
+
+verifyFilterOnFaskesPage(test.TemuDokterTest)  Time elapsed: 5.441 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[.='Lihat Lebih Banyak']"}
+  (Session info: chrome=114.0.5735.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-NVQOVER', ip: '10.125.75.113', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [562a6037ce5dddc3ef73c78606dede48, findElement {using=xpath, value=//span[.='Lihat Lebih Banyak']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\medik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62668}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62668/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 562a6037ce5dddc3ef73c78606dede48
+	at test.TemuDokterTest.verifyFilterOnFaskesPage(TemuDokterTest.java:26)
+

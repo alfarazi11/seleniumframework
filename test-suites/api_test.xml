@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AskDoctor">
+    <test name="API Test" preserve-order="true">
+        <classes>
+            <class name="test.APITest">
+                <methods>
+                    <include name="userProfile"/>
+                    <include name="memberHistory"/>
+                </methods>
+            </class>
+            <!--            <class name="test.onboarding.LoginTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="login"/>-->
+            <!--                    <include name="phoneNumberNotRegister"/>-->
+            <!--                    <include name="invalidPhoneNumber1"/>-->
+            <!--                    <include name="invalidPhoneNumber2"/>-->
+            <!--                    <include name="invalidPassword"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Login">
+    <test thread-count="2" parallel="methods" name="UI Test" >
+        <classes>
+            <class name="test.LoginTest">
+                <methods>
+                    <include name="validLogin"/>
+                    <include name="failedLogin"/>
+                </methods>
+            </class>
+            <class name="test.HomeTest">
+                <methods>
+                    <include name="globalSearch"/>
+                </methods>
+            </class>
+            <class name="test.TemuDokterTest">
+                <methods>
+                    <include name="verifyFilterOnFaskesPage"/>
+                    <include name="temuDokterBuatJanji"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
